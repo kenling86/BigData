@@ -1,0 +1,10 @@
+---
+output: html_document
+---
+##Example
+###Regression knit example
+
+```{r}
+mydata<-read.csv("Ozone_data.csv")
+summary(lm(Ozone ~ Temp+Month, data = mydata))
+```
